@@ -1,0 +1,171 @@
+@import "./utils/mediasQueries";
+
+// General
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    padding:4vw;
+    margin: auto;
+    background-color: rgb(16, 15, 15);
+    color: whitesmoke;
+    text-align: justify;
+    max-width: 1000px;
+}
+
+h1 , h2 , h3 , p , label{
+    font-family: 'Epilogue', 'arial' , sans-serif;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.45px;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+//Titres
+.title {
+    margin: 10px 0 30px 0;
+}
+
+.subtitle {
+    margin-bottom: 50px;
+}
+
+//Questions
+.question {
+    width: 100%;
+    margin-top: 70px;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__choice {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 1rem;
+        user-select: none;
+        margin-bottom: 15px;
+    }
+}
+
+//Answers
+.answer {
+  margin: 25px 0 40px 0;
+  width: 100%;
+  border:1px solid white;
+  padding: 1rem;
+  display: none;
+}
+
+//Results
+.results {
+  margin: 50px 0 50px 0;
+  width: 100%;
+  border:1px solid white;
+  padding: 1rem;
+  display: none;
+
+    img {
+      width: 100%;
+      margin: 10px 0 10px 0;
+  }
+}
+
+//COMPORTEMENTS AU CLIC 
+
+  //CHECKBOXES 
+  /* Masquer la checkbox par défaut */
+  input[type="checkbox"] {
+      position: relative;
+      height: 1.3em;
+      width: 1.3em;
+      opacity: 0;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    
+    /* Créer une checkbox customisée */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 1.3em;
+      width: 1.3em;
+      border:1px solid whitesmoke;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    
+    /* Au clic si bonne réponse */
+    input:checked ~ .checkmark.checkmark-true {
+      background-color: seagreen;
+    }
+
+      // Au clic si mauvaise réponse 
+    input:checked ~ .checkmark.checkmark-false {
+      background-color: rgb(190, 39, 47);
+    }
+    
+    /* Créer la checkmark masquée si non cliquée */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    
+    /* La checkmark en cas de bonne réponse */
+    input:checked ~ .checkmark.checkmark-true:after {
+      display: block;
+    }
+
+    /* Styliser la checkmark "bonne réponse" */
+  .checkmark.checkmark-true:after {
+      left: 0.45em;
+      top: 0.25em;
+      width: 0.25em;
+      height: 0.5em;
+      border: solid white;
+      border-width: 0 0.15em 0.15em 0;
+      transform: rotate(45deg);
+    }
+
+  // Styliser la checkmark "mauvaise réponse"
+    input:checked ~ .checkmark.checkmark-false:after {
+      content: "";
+      display: block;
+      color: white;
+      left: 4px;
+      top:3px;
+      transform: none;
+      border: none;
+    }
+
+    //
+
+    //LES LABELS
+    .label-true.checked {
+      color:seagreen;
+    }
+
+    .label-false.checked {
+      color:rgb(190, 39, 47);
+    }
+
+
+
+
