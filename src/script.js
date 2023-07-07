@@ -49,13 +49,20 @@ inputs.forEach(input => {
         })
 
         //Résultats finaux
-        if (count === 2) {
+        console.log("count : " , count , "score : " , score)
+        if (count === 8) {
 
             document.querySelector('.results__score').innerText = `${score} / ${count}`
-            if (score <= 1) {
+            if (score <= 4) {
                 document.querySelector('.results__text1').innerText = "Oh non..."
                 document.querySelector('.results__text2').innerText = "Tu ne connais pas du tout ton sujet ! C’est dommage… On ne peut pas dire que tu sois fan de One Piece."
                 document.querySelector(".results > img").setAttribute("src" , "../Images/baggy-enervé.gif")
+            }
+
+            else if (score <= 6) {
+                document.querySelector('.results__text1').innerText = "Pas mal !"
+                document.querySelector('.results__text2').innerText = "Tu maitrise bien ton sujet, on voit bien que apprécie One Piece mais il te reste du chemin avant de devenir un vrai mugiwara."
+                document.querySelector(".results > img").setAttribute("src" , "../Images/sanji-pouce.gif")
             }
 
             else {
