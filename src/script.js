@@ -1,8 +1,13 @@
 //SCRIPT AFFICHER LE QUIZZ
+    //Récupérer le nom de la page actuelle
+    const fullPathName = window.location.pathname;
+    const pathName = fullPathName.split("/")[1].split(".")[0] //Deux actions de split en une seule ligne
+    console.log(pathName)
+    
     //Récupérer le fichier de données
     async function fetchData() {
         try {
-            const response = await fetch("../src/data/data-quizz-onepiece.json");
+            const response = await fetch(`../src/data/data-${pathName}.json`);
             
             if (!response.ok) {
                 throw new Error("Erreur réseau ou fichier non trouvé");

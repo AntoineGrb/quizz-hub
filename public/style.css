@@ -18,6 +18,10 @@ h1, h2, h3, p, label, a {
   font-family: "Epilogue", "arial", sans-serif;
 }
 
+h1 {
+  font-size: 1.7rem;
+}
+
 h3 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -153,7 +157,33 @@ input:checked ~ .checkmark.checkmark-false:after {
   color: rgb(190, 39, 47);
 }
 
-.link-to-quizz {
+.quizz {
+  display: flex;
+  gap: 10px;
+  width: clamp(100px, 100%, 800px);
+  margin-bottom: 20px;
+}
+.quizz__img {
+  width: 60%;
+}
+.quizz__img img {
+  width: 100%;
+}
+.quizz__desc {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.quizz__desc__title > p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+.quizz__desc__date > p {
+  font-size: 0.8rem;
+}
+
+.link {
   color: white;
   text-decoration: none;
 }
