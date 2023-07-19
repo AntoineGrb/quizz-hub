@@ -14,7 +14,7 @@ body {
   max-width: 1000px;
 }
 
-h1, h2, h3, p, label {
+h1, h2, h3, p, label, a {
   font-family: "Epilogue", "arial", sans-serif;
 }
 
@@ -28,8 +28,13 @@ label {
   font-size: 0.9rem;
 }
 
+.back-to-hub {
+  text-decoration: none;
+  color: white;
+}
+
 .title {
-  margin: 10px 0 30px 0;
+  margin: 50px 0 30px 0;
 }
 
 .subtitle {
@@ -146,6 +151,11 @@ input:checked ~ .checkmark.checkmark-false:after {
 
 .label-false.checked {
   color: rgb(190, 39, 47);
+}
+
+.link-to-quizz {
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

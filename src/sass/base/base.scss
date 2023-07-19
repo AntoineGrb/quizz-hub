@@ -1,0 +1,29 @@
+// General
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    padding:4vw;
+    margin: auto;
+    background-color: rgb(16, 15, 15);
+    color: whitesmoke;
+    text-align: justify;
+    max-width: 1000px;
+}
+
+h1 , h2 , h3 , p , label , a{
+    font-family: 'Epilogue', 'arial' , sans-serif; 
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.45px;
+}
+
+label {
+  font-size: 0.9rem;
+}
