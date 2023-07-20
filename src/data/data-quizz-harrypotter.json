@@ -140,11 +140,151 @@
         "answer":"EXPELLIARMUS !"
     },
     {
+        "id" : "q6",
+        "title" : "Qui est le prince de sang mêlé ? ?",
+        "img" : "./Images/harry-potter/prince.jpg",
+        "choices" : [
+            {
+                "id":"q6r1",
+                "label":"James Potter",
+                "type":"false"
+            },
+            {
+                "id":"q6r2",
+                "label":"Alberforth Dumbledore",
+                "type":"false"
+            },
+            {
+                "id":"q6r3",
+                "label":"Harry Potter",
+                "type":"false"
+            },
+            {
+                "id":"q6r4",
+                "label":"Severus Rogue",
+                "type":"true"
+            }
+        ],
+        "answer":"C'est bien Rogue qui s'appelait lui-même Prince de sang-mêlé dans sa jeunesse. Harry l'apprend par l'intermédiaire de son ancien livre de potions"
+    },
+    {
+        "id" : "q7",
+        "title" : "Quelle épreuve n'existe pas durant tournoi des trois sorciers ?",
+        "img" : "./Images/harry-potter/tournoi.jpg",
+        "choices" : [
+            {
+                "id":"q7r1",
+                "label":"Combattre un dragon ",
+                "type":"false"
+            },
+            {
+                "id":"q7r2",
+                "label":"Sortir de la chambre des énigmes",
+                "type":"true"
+            },
+            {
+                "id":"q7r3",
+                "label":"Sauver un être cher au fond du lac",
+                "type":"false"
+            },
+            {
+                "id":"q7r4",
+                "label":"Braver un labyrinthe",
+                "type":"false"
+            }
+        ],
+        "answer":"Les 3 épreuves du tournoi des 3 sorciers sont, dans l'ordre : combattre un dragon, sauver un être cher au fond du lac et braver le labyrinthe final pour accéder au trophée."
+    },
+    {
+        "id" : "q8",
+        "title" : "Combien d'année Harry Potter passe-t-il à Poudlard ?",
+        "img" : "./Images/harry-potter/poudlard.jpg",
+        "choices" : [
+            {
+                "id":"q8r1",
+                "label":"5",
+                "type":"false"
+            },
+            {
+                "id":"q8r2",
+                "label":"6",
+                "type":"false"
+            },
+            {
+                "id":"q8r3",
+                "label":"7",
+                "type":"true"
+            },
+            {
+                "id":"q8r4",
+                "label":"8",
+                "type":"false"
+            }
+        ],
+        "answer":"Harry passe 7 ans à Poudlard (un tome représentant une année scolaire)"
+    },
+    {
+        "id" : "q9",
+        "title" : "Quelle matière enseigne le professeur McGonagall ? ",
+        "img" : "./Images/harry-potter/mcgonagall.jpg",
+        "choices" : [
+            {
+                "id":"q9r1",
+                "label":"La métamorphose",
+                "type":"true"
+            },
+            {
+                "id":"q9r2",
+                "label":"Les sortilèges",
+                "type":"false"
+            },
+            {
+                "id":"q9r3",
+                "label":"Les défenses contre le forces du mal",
+                "type":"false"
+            },
+            {
+                "id":"q9r4",
+                "label":"La botanique",
+                "type":"false"
+            }
+        ],
+        "answer":"McGonagall est la professeur de métamorphose, elle est elle-même un animagus et peut prendre la forme d'un gros chat noir."
+    },
+    {
+        "id" : "q10",
+        "title" : "Qui Harry emmène-t-il au bal du tournoi des 3 sorciers ? ",
+        "img" : "./Images/harry-potter/bal.jpg",
+        "choices" : [
+            {
+                "id":"q10r1",
+                "label":"Padma",
+                "type":"false"
+            },
+            {
+                "id":"q10r2",
+                "label":"Cho",
+                "type":"false"
+            },
+            {
+                "id":"q10r3",
+                "label":"Ginny",
+                "type":"false"
+            },
+            {
+                "id":"q10r4",
+                "label":"Parvati",
+                "type":"true"
+            }
+        ],
+        "answer":"Harry aborde Parvati pour aller au bal des 3 sorciers, et demande également pour Ron qui ira avec sa soeur jumelle Padma."
+    },
+    {
         "resultBad":"Tu ne connais pas du tout ton sujet ! Tu dois être un moldu...",
-        "imgBad":"../Images/harry-potter/harry-perplexe.gif",
+        "imgBad":"./Images/harry-potter/harry-perplexe.gif",
         "resultAvg":"Presque ! Tu connais ton sujet mais tu peux mieux faire. Continue de travailler tes cours à Poudlard...",
-        "imgAvg":"",
+        "imgAvg":"./Images/harry-potter/harry-énervé.gif",
         "resultGood":"Tu maitrises parfaitement ton sujet ! Tu m'a tout l'air d'être un grand sorcier.",
-        "imgGood":""
+        "imgGood":"./Images/harry-potter/harry-heureux.gif"
     }
 ]

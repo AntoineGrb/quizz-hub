@@ -214,6 +214,52 @@
         "answer":"C'est Akainu qui inflige une blessure fatale à Barbe Blanche, qui mourra peu après debout devant ses ennemis."
     },
     {
+        "id" : "q9",
+        "title" : "Luffy parvient-il à mettre Magellan KO et s'évader d'Impel Down ?",
+        "img" : "./Images/one-piece/magellan.jpg",
+        "choices" : [
+            {
+                "id":"q9r1",
+                "label":"Oui",
+                "type":"false"
+            },
+            {
+                "id":"q9r2",
+                "label":"Non",
+                "type":"true"
+            }
+        ],
+        "answer":"Luffy parvient effectivement à s'évader d'Impel Down, mais il ne réussit pas à vaincre Magellan lors de leur combat. C'est Mr 2 qui se sacrifie héroïquement pour retarder Magellan et leur permettre de s'enfuir."
+    },
+    {
+        "id" : "q10",
+        "title" : "Après la guerre au sommet, Luffy arbore un tatouage temporaire, qui est en fait un message codé pour signaler à son équipage leur date de retrouvailles. Quel est ce tatouage ?",
+        "img" : "./Images/one-piece/equipage.jpg",
+        "choices" : [
+            {
+                "id":"q10r1",
+                "label":"3D2Y",
+                "type":"true"
+            },
+            {
+                "id":"q10r2",
+                "label":"2D3Y",
+                "type":"false"
+            },
+            {
+                "id":"q10r3",
+                "label":"3D1Y",
+                "type":"false"
+            },
+            {
+                "id":"q10r4",
+                "label":"1D3Y",
+                "type":"false"
+            }
+        ],
+        "answer":"La réponse est 3D2Y. Le message indique aux membres de l'équipage de ne pas se réunir en 3 jours comme initialement prévu, mais plutôt en 2 ans."
+    },
+    {
         "resultBad":"Tu ne connais pas du tout ton sujet ! C’est dommage… On ne peut pas dire que tu sois fan de One Piece.",
         "imgBad":"../Images/one-piece/baggy-enervé.gif",
         "resultAvg":"Tu maitrises bien ton sujet, on voit bien que apprécie One Piece mais il te reste du chemin avant de devenir un vrai mugiwara",

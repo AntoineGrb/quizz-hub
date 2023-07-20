@@ -1,0 +1,290 @@
+[
+   {
+        "id" : "q1",
+        "title" : "Combien de frères possède Ron Wealsey ?",
+        "img" : "./Images/harry-potter/ron.jpg",
+        "choices" : [
+            {
+                "id":"q1r1",
+                "label":"3",
+                "type":"false"
+            },
+            {
+                "id":"q1r2",
+                "label":"4",
+                "type":"false"
+            },
+            {
+                "id":"q1r3",
+                "label":"5",
+                "type":"true"
+            },
+            {
+                "id":"q1r4",
+                "label":"6",
+                "type":"false"
+            }
+        ],
+        "answer":"Ron a 5 frères, Charlie, Bill, Percy, Fred & Georges et une soeur, Ginny"
+    },
+    {
+        "id" : "q2",
+        "title" : "Quelle phrase prononce Harry Potter pour ouvrir la chambre des secrets ?",
+        "img" : "./Images/harry-potter/fourchelang.jpg",
+        "choices" : [
+            {
+                "id":"q2r1",
+                "label":"Serpencantata",
+                "type":"false"
+            },
+            {
+                "id":"q2r2",
+                "label":"Serpensortia",
+                "type":"true"
+            },
+            {
+                "id":"q2r3",
+                "label":"Dracoserpentis",
+                "type":"false"
+            },
+            {
+                "id":"q2r4",
+                "label":"Viperalocutio",
+                "type":"false"
+            }
+        ],
+        "answer":"Ssssssssserpenssssssssortia..."
+    },
+    {
+        "id" : "q3",
+        "title" : "Qui devient Directeur après Dumbledore ?",
+        "img" : "./Images/harry-potter/dumbledore-mort.jpg",
+        "choices" : [
+            {
+                "id":"q3r1",
+                "label":"Mcgonagall",
+                "type":"false"
+            },
+            {
+                "id":"q3r2",
+                "label":"Ombrage",
+                "type":"false"
+            },
+            {
+                "id":"q3r3",
+                "label":"Voldemort",
+                "type":"false"
+            },
+            {
+                "id":"q3r4",
+                "label":"Rogue",
+                "type":"true"
+            }
+        ],
+        "answer":"C'est Rogue qui reprendra la direction de l'école après la mort de Dumbledore, sur ordre de Voldemort"
+    },
+    {
+        "id" : "q4",
+        "title" : "Quel association entre un sorcier et son animagus est fausse ?",
+        "img" : "./Images/harry-potter/hippogriffe.jpg",
+        "choices" : [
+            {
+                "id":"q4r1",
+                "label":"Sirius Black - Loup",
+                "type":"true"
+            },
+            {
+                "id":"q4r2",
+                "label":"McGonagall - Chat",
+                "type":"false"
+            },
+            {
+                "id":"q4r3",
+                "label":"Rita Skeeter - Scarabée",
+                "type":"false"
+            },
+            {
+                "id":"q4r4",
+                "label":"James Potter - Cerf",
+                "type":"false"
+            }
+        ],
+        "answer":"L'animagus de Sirius n'est pas un loup, mais un chien ! Même si certaines personnes le prennent pour un loup dans le 3ème tome"
+    },
+    {
+        "id" : "q5",
+        "title" : "Qui parvient à survivre lors de la bataille de Poudlard ?",
+        "img" : "./Images/harry-potter/bataille.jpg",
+        "choices" : [
+            {
+                "id":"q5r1",
+                "label":"Remus Lupin",
+                "type":"false"
+            },
+            {
+                "id":"q5r2",
+                "label":"Nymphadora Tonks",
+                "type":"false"
+            },
+            {
+                "id":"q5r3",
+                "label":"Fred Weasley",
+                "type":"false"
+            },
+            {
+                "id":"q5r4",
+                "label":"Georges Wealsey ",
+                "type":"true"
+            }
+        ],
+        "answer":"EXPELLIARMUS !"
+    },
+    {
+        "id" : "q6",
+        "title" : "De quelle famille Kreattur est-il l'elfe de maison ?",
+        "img" : "./Images/harry-potter/kreattur.jpg",
+        "choices" : [
+            {
+                "id":"q6r1",
+                "label":"Malefoy",
+                "type":"false"
+            },
+            {
+                "id":"q6r2",
+                "label":"Lestranges",
+                "type":"false"
+            },
+            {
+                "id":"q6r3",
+                "label":"Gaunt",
+                "type":"false"
+            },
+            {
+                "id":"q6r4",
+                "label":"Black",
+                "type":"true"
+            }
+        ],
+        "answer":"C'est l'elfe de maison des Black, donc son dernier maitre est bien Sirius"
+    },
+    {
+        "id" : "q7",
+        "title" : "Qui n'a jamais été professeur de Défense contre les forces du mal ? ?",
+        "img" : "./Images/harry-potter/prof.jpg",
+        "choices" : [
+            {
+                "id":"q7r1",
+                "label":"Rogue",
+                "type":"false"
+            },
+            {
+                "id":"q7r2",
+                "label":"Slughorn",
+                "type":"true"
+            },
+            {
+                "id":"q7r3",
+                "label":"Lockhart",
+                "type":"false"
+            },
+            {
+                "id":"q7r4",
+                "label":"Carrow",
+                "type":"false"
+            }
+        ],
+        "answer":"Slughorn était professeur de potions lors de son année à Poudlard, tands que Carrow (un mangemort !) assurait le cours de défenses contre les forces du mal."
+    },
+    {
+        "id" : "q8",
+        "title" : "En combien de partie Voldemort a t-il divisé son âme ?",
+        "img" : "./Images/harry-potter/voldemort-rire.jpg",
+        "choices" : [
+            {
+                "id":"q8r1",
+                "label":"6",
+                "type":"false"
+            },
+            {
+                "id":"q8r2",
+                "label":"7",
+                "type":"false"
+            },
+            {
+                "id":"q8r3",
+                "label":"8",
+                "type":"true"
+            },
+            {
+                "id":"q8r4",
+                "label":"9",
+                "type":"false"
+            }
+        ],
+        "answer":"Voldemort a divisé intentionnellement son âme en 7 parties en créant 6 horcruxes, mais il a accidentellement divisé son âme une 8ème fois en tentant de tuer Harry bébé. La bonne réponse est donc 8."
+    },
+    {
+        "id" : "q9",
+        "title" : "Quel horcruxe ne s'est jamais retrouvé à Poudlard ? ",
+        "img" : "./Images/harry-potter/nagini.jpg",
+        "choices" : [
+            {
+                "id":"q9r1",
+                "label":"Le médaillon de Salazar Serpentard",
+                "type":"true"
+            },
+            {
+                "id":"q9r2",
+                "label":"Le diadème de Rowana Serdaigle",
+                "type":"false"
+            },
+            {
+                "id":"q9r3",
+                "label":"Le journal de Tom jedusor",
+                "type":"false"
+            },
+            {
+                "id":"q9r4",
+                "label":"Nagini",
+                "type":"false"
+            }
+        ],
+        "answer":"Le médaillon de Salazar Serpentard est volé à Ombrage au ministère de la magie puis détruit dans la forêt par l'épée de Gryffondor. Pour le reste, ils sont tous passé par Poudlard."
+    },
+    {
+        "id" : "q10",
+        "title" : "Quel est le nom complet du plus jeune enfant de Harry Potter ? ",
+        "img" : "./Images/harry-potter/harry-vieux.jpg",
+        "choices" : [
+            {
+                "id":"q10r1",
+                "label":"Lily Luna Potter",
+                "type":"true"
+            },
+            {
+                "id":"q10r2",
+                "label":"Lily Nymphadora Potter",
+                "type":"false"
+            },
+            {
+                "id":"q10r3",
+                "label":"James Albus Potter",
+                "type":"false"
+            },
+            {
+                "id":"q10r4",
+                "label":"James Severus Potter",
+                "type":"false"
+            }
+        ],
+        "answer":"Lily Luna Potter est le nom de la cadette d'Harry Potter. James Severus Potter est le deuxième enfant d'Harry."
+    },
+    {
+        "resultBad":"Tu ne connais pas du tout ton sujet ! Tu dois être un moldu...",
+        "imgBad":"./Images/harry-potter/harry-perplexe.gif",
+        "resultAvg":"Presque ! Tu connais ton sujet mais tu peux mieux faire. Continue de travailler tes cours à Poudlard...",
+        "imgAvg":"./Images/harry-potter/harry-énervé.gif",
+        "resultGood":"Tu maitrises parfaitement ton sujet ! Tu m'a tout l'air d'être un grand sorcier.",
+        "imgGood":"./Images/harry-potter/harry-heureux.gif"
+    }
+]

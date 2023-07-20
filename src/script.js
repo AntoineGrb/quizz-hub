@@ -63,8 +63,9 @@ function responseToQuiz(data) {
         input.addEventListener("click" , (e) => {
             //Récupère les id de la réponse et de la question
             const id = e.target.getAttribute("id")
-            const questionId = id.slice(0,2)
-            const answerId = `a${id.slice(1,2)}`
+            const questionId = id.slice(0, id.length-2) //On retire les deux dernières lettres de l'id
+            const answerId = `a${id.slice(1, id.length-2)}`
+            console.log(id , questionId , answerId)
 
             //Déterminer si la réponse est bonne ou fausse
             const label = document.querySelector(`label[for='${id}']`)
