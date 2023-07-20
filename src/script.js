@@ -27,7 +27,7 @@
     //Déployer le quizz sur le DOM
     function deployData(data) {
         const main = document.querySelector("main")
-        for (let i=0 ; i < data.length ; i++ ) {
+        for (let i=0 ; i < data.length - 1 ; i++ ) {
             //Construire les choix avec une boucle interne map
             const choicesHTML = data[i].choices.map(choice => 
                 `<div class="question__choice">
@@ -49,12 +49,12 @@
                 </div>`
             )
         }
-        responseToQuiz();
+        responseToQuiz(data);
     }
     
 
 //SCRIPT REPONDRE AU QUIZZ
-function responseToQuiz() {
+function responseToQuiz(data) {
     let count = 0;
     let score = 0;
 
@@ -102,25 +102,25 @@ function responseToQuiz() {
 
             //Résultats finaux
             console.log("count : " , count , "score : " , score)
-            if (count === 8) {
+            if (count === (data.length - 1)) {
 
                 document.querySelector('.results__score').innerText = `${score} / ${count}`
-                if (score <= 4) {
+                if (score <= 0.5*count) {
                     document.querySelector('.results__text1').innerText = "Oh non..."
-                    document.querySelector('.results__text2').innerText = "Tu ne connais pas du tout ton sujet ! C’est dommage… On ne peut pas dire que tu sois fan de One Piece."
-                    document.querySelector(".results > img").setAttribute("src" , "../Images/baggy-enervé.gif")
+                    document.querySelector('.results__text2').innerText = `${data[data.length - 1].resultBad}`
+                    document.querySelector(".results > img").setAttribute("src" , `${data[data.length - 1].imgBad}`)
                 }
 
-                else if (score <= 6) {
+                else if (score <= 0.8*count) {
                     document.querySelector('.results__text1').innerText = "Pas mal !"
-                    document.querySelector('.results__text2').innerText = "Tu maitrise bien ton sujet, on voit bien que apprécie One Piece mais il te reste du chemin avant de devenir un vrai mugiwara."
-                    document.querySelector(".results > img").setAttribute("src" , "../Images/sanji-pouce.gif")
+                    document.querySelector('.results__text2').innerText = `${data[data.length - 1].resultAvg}`
+                    document.querySelector(".results > img").setAttribute("src" , `${data[data.length - 1].imgAvg}`)
                 }
 
                 else {
                     document.querySelector('.results__text1').innerText = "Bravo !"
-                    document.querySelector('.results__text2').innerText = "Tu maitrise parfaitement ton sujet ! On voit bien que tu es un grand fan de One Piece."
-                    document.querySelector(".results > img").setAttribute("src" , "../Images/sanji-heureux.gif")
+                    document.querySelector('.results__text2').innerText = `${data[data.length - 1].resultGood}`
+                    document.querySelector(".results > img").setAttribute("src" , `${data[data.length - 1].imgGood}`)
                 }
 
                 //Affichage du bloc

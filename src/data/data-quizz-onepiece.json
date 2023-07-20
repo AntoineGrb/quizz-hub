@@ -2,7 +2,7 @@
     {
         "id" : "q1",
         "title" : "Comment s'appelle le village ou Luffy rencontre Zoro pour la première fois ?",
-        "img" : "./Images/zoro.png",
+        "img" : "./Images/one-piece/zoro.png",
         "choices" : [
             {
                 "id":"q1r1",
@@ -30,7 +30,7 @@
     {
         "id" : "q2",
         "title" : "Comment se nomment les 3 lieutenants d'Arlong qu'affrontent l'équipage ?",
-        "img" : "./Images/arlong.png",
+        "img" : "./Images/one-piece/arlong.png",
         "choices" : [
             {
                 "id":"q2r1",
@@ -58,7 +58,7 @@
     {
         "id" : "q3",
         "title" : "Dans quel tome apparait Ace pour la première fois ?",
-        "img" : "./Images/ace.jpeg",
+        "img" : "./Images/one-piece/ace.jpeg",
         "choices" : [
             {
                 "id":"q3r1",
@@ -86,7 +86,7 @@
     {
         "id" : "q4",
         "title" : "Comment s'appelle le courant ascendant permettant d'accéder aux iles célestes ?",
-        "img" : "./Images/knockup.jpg",
+        "img" : "./Images/one-piece/knockup.jpg",
         "choices" : [
             {
                 "id":"q4r1",
@@ -114,7 +114,7 @@
     {
         "id" : "q5",
         "title" : "Quel membre du CP9 ne s'est pas infiltré durant 5 ans à Water Seven ?",
-        "img" : "./Images/cp9.avif",
+        "img" : "./Images/one-piece/cp9.avif",
         "choices" : [
             {
                 "id":"q5r1",
@@ -142,7 +142,7 @@
     {
         "id" : "q6",
         "title" : "Avant sa mort, Brook a t-il fait partie de l'équipage de Gold Roger ?",
-        "img" : "./Images/brook.jpg",
+        "img" : "./Images/one-piece/brook.jpg",
         "choices" : [
             {
                 "id":"q6r1",
@@ -160,7 +160,7 @@
     {
         "id" : "q7",
         "title" : "Combien y a t-il de Supernovas sur l'ile de Sabaody ?",
-        "img" : "./Images/supernova.jpg",
+        "img" : "./Images/one-piece/supernova.jpg",
         "choices" : [
             {
                 "id":"q7r1",
@@ -188,7 +188,7 @@
     {
         "id" : "q8",
         "title" : "Lors de la guerre au sommet, qui inflige à Barbe Blanche la blessure qui lui sera fatale ?",
-        "img" : "./Images/barbe-blanche.png",
+        "img" : "./Images/one-piece/barbe-blanche.png",
         "choices" : [
             {
                 "id":"q8r1",
@@ -212,5 +212,13 @@
             }
         ],
         "answer":"C'est Akainu qui inflige une blessure fatale à Barbe Blanche, qui mourra peu après debout devant ses ennemis."
+    },
+    {
+        "resultBad":"Tu ne connais pas du tout ton sujet ! C’est dommage… On ne peut pas dire que tu sois fan de One Piece.",
+        "imgBad":"../Images/one-piece/baggy-enervé.gif",
+        "resultAvg":"Tu maitrises bien ton sujet, on voit bien que apprécie One Piece mais il te reste du chemin avant de devenir un vrai mugiwara",
+        "imgAvg":"../Images/one-piece/sanji-pouce.gif",
+        "resultGood":"Tu maitrises parfaitement ton sujet ! On voit bien que tu es un grand fan de One Piece.",
+        "imgGood":"../Images/one-piece/sanji-heureux.gif"
     }
 ]

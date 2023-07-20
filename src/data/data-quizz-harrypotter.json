@@ -1,216 +1,150 @@
 [
-    {
+   {
         "id" : "q1",
-        "title" : "TEST HARRY POTTER",
-        "img" : "./Images/zoro.png",
+        "title" : "Qui vient chercher Harry Potter pour aller à Poudlard pour la première fois ?",
+        "img" : "./Images/harry-potter/durlsey.jpg",
         "choices" : [
             {
                 "id":"q1r1",
-                "label":"Logue Town",
+                "label":"Dumbledore",
                 "type":"false"
             },
             {
                 "id":"q1r2",
-                "label":"Shell Town",
+                "label":"Hagrid",
                 "type":"true"
             },
             {
                 "id":"q1r3",
-                "label":"Le village de Fushia",
+                "label":"Ron",
                 "type":"false"
             },
             {
                 "id":"q1r4",
-                "label":"Orange Town",
+                "label":"Rogue",
                 "type":"false"
             }
         ],
-        "answer":"C'est dans le village de Shell Town, le premier dans lequel Luffy accoste, qu'il fait la rencontre de Zoro, qui deviendra par la suite son plus fidèle lieutenant."
+        "answer":"C'est Hagrid qui débarque pour la première fois devant les Dursley pour annoncer qu'Harry est accépté à Poudlard."
     },
     {
         "id" : "q2",
-        "title" : "Comment se nomment les 3 lieutenants d'Arlong qu'affrontent l'équipage ?",
-        "img" : "./Images/arlong.png",
+        "title" : "Comment s'appelle l'elfe de maison libéré par Harry Potter ?",
+        "img" : "./Images/harry-potter/dobby.png",
         "choices" : [
             {
                 "id":"q2r1",
-                "label":"Kuroobi, Octy, Smack",
-                "type":"true"
+                "label":"Koby",
+                "type":"false"
             },
             {
                 "id":"q2r2",
-                "label":"Kuro, Octo, Slash",
+                "label":"Dory",
                 "type":"false"
             },
             {
                 "id":"q2r3",
-                "label":"Kurobin, Octy, Smock",
+                "label":"Bobby",
                 "type":"false"
             },
             {
                 "id":"q2r4",
-                "label":"Kuromi, Octo, Smoke",
-                "type":"false"
+                "label":"Dobby",
+                "type":"true"
             }
         ],
-        "answer":"C'est Kuroobi, Octy et Smack qui affrontent Zoro, Sanji et Usopp à Arlong Park"
+        "answer":"Dobby n'a pas de maitre, Dobby est un elfe libre ! "
     },
     {
         "id" : "q3",
-        "title" : "Dans quel tome apparait Ace pour la première fois ?",
-        "img" : "./Images/ace.jpeg",
+        "title" : "Comment s'appellent les compères de Malefoy ?",
+        "img" : "./Images/harry-potter/crabbe-goyle.jpg",
         "choices" : [
             {
                 "id":"q3r1",
-                "label":"Tome 16",
-                "type":"false"
-            },
-            {
-                "id":"q3r2",
-                "label":"Tome 18",
+                "label":"Crabbe & Goyle",
                 "type":"true"
             },
             {
+                "id":"q3r2",
+                "label":"Fred & Georges",
+                "type":"false"
+            },
+            {
                 "id":"q3r3",
-                "label":"Tome 20",
+                "label":"Gab & Joe",
                 "type":"false"
             },
             {
                 "id":"q3r4",
-                "label":"Tome 23",
+                "label":"Matt & Crobes",
                 "type":"false"
             }
         ],
-        "answer":"Ace apparait pour la première fois dans le tome 18, lorsqu'il croise Luffy et son équipage à Alabasta."
+        "answer":"Crabbe & Goyle sont les amis (plutôt stupides) de Malefoy. A noter que Crabbe meurt lors de la bataille de Poudlard dans la salle sur Demande en attaquant Harry avec un sort qu'il ne maitrise pas"
     },
     {
         "id" : "q4",
-        "title" : "Comment s'appelle le courant ascendant permettant d'accéder aux iles célestes ?",
-        "img" : "./Images/knockup.jpg",
+        "title" : "A quelle maison appartient Cédric Diggory ?",
+        "img" : "./Images/harry-potter/diggory.jpg",
         "choices" : [
             {
                 "id":"q4r1",
-                "label":"Lift Off Steam",
+                "label":"Gryffondor",
                 "type":"false"
             },
             {
                 "id":"q4r2",
-                "label":"Skyward Current",
+                "label":"Serpentard",
                 "type":"false"
             },
             {
                 "id":"q4r3",
-                "label":"Upstream Flow",
-                "type":"false"
+                "label":"Poufsouffle",
+                "type":"true"
             },
             {
                 "id":"q4r4",
-                "label":"Knock Up Stream",
-                "type":"true"
+                "label":"Serdaigle",
+                "type":"false"
             }
         ],
-        "answer":"C'est le courant légendaire appelé ''Knock Up Stream'' qui propulse le Vogue Merry vers les iles célestes !"
+        "answer":"Cédric Diggory est la fierté de la maison Poufsouffle, souvent considérée comme la maison la plus faible aux yeux des élèves de Poudlard"
     },
     {
         "id" : "q5",
-        "title" : "Quel membre du CP9 ne s'est pas infiltré durant 5 ans à Water Seven ?",
-        "img" : "./Images/cp9.avif",
+        "title" : "Quel sort permet de désarmer un sorcier ?",
+        "img" : "./Images/harry-potter/expelliarmus.jpg",
         "choices" : [
             {
                 "id":"q5r1",
-                "label":"Khalifa",
+                "label":"Spero Patronum",
                 "type":"false"
             },
             {
                 "id":"q5r2",
-                "label":"Blueno",
+                "label":"Petrificus Totalus",
                 "type":"false"
             },
             {
                 "id":"q5r3",
-                "label":"Kaku",
+                "label":"Reducto",
                 "type":"false"
             },
             {
                 "id":"q5r4",
-                "label":"Jabura",
+                "label":"Expelliarmus ",
                 "type":"true"
             }
         ],
-        "answer":"C'est Jabura que le CP9 retrouve à Enies Lobby, pour le reste Kaku, Khalifa et Blueno étaient infiltrés à Water Seven durant plusieurs années."
+        "answer":"EXPELLIARMUS !"
     },
     {
-        "id" : "q6",
-        "title" : "Avant sa mort, Brook a t-il fait partie de l'équipage de Gold Roger ?",
-        "img" : "./Images/brook.jpg",
-        "choices" : [
-            {
-                "id":"q6r1",
-                "label":"Vrai",
-                "type":"false"
-            },
-            {
-                "id":"q6r2",
-                "label":"Faux",
-                "type":"true"
-            }
-        ],
-        "answer":"Brook a déjà croisé Gold Roger durant ses pérégrinations avec son ancien équipage des Rumbar Pirates, mais il n'a jamais fait parti de son équipage."
-    },
-    {
-        "id" : "q7",
-        "title" : "Combien y a t-il de Supernovas sur l'ile de Sabaody ?",
-        "img" : "./Images/supernova.jpg",
-        "choices" : [
-            {
-                "id":"q7r1",
-                "label":"7",
-                "type":"false"
-            },
-            {
-                "id":"q7r2",
-                "label":"9",
-                "type":"false"
-            },
-            {
-                "id":"q7r3",
-                "label":"11",
-                "type":"true"
-            },
-            {
-                "id":"q7r4",
-                "label":"13",
-                "type":"false"
-            }
-        ],
-        "answer":"Il y a bien 11 supernovas : Luffy, Zoro, Law, Kidd, Killer, Hawkins, X Drake, Bonney, Bege, Apoo et Urouge."
-    },
-    {
-        "id" : "q8",
-        "title" : "Lors de la guerre au sommet, qui inflige à Barbe Blanche la blessure qui lui sera fatale ?",
-        "img" : "./Images/barbe-blanche.png",
-        "choices" : [
-            {
-                "id":"q8r1",
-                "label":"L'amiral Akainu",
-                "type":"true"
-            },
-            {
-                "id":"q8r2",
-                "label":"Barbe noire",
-                "type":"false"
-            },
-            {
-                "id":"q8r3",
-                "label":"L'amiral en chef Sengoku",
-                "type":"false"
-            },
-            {
-                "id":"q8r4",
-                "label":"Son membre d'équipage Rockstar",
-                "type":"false"
-            }
-        ],
-        "answer":"C'est Akainu qui inflige une blessure fatale à Barbe Blanche, qui mourra peu après debout devant ses ennemis."
+        "resultBad":"Tu ne connais pas du tout ton sujet ! Tu dois être un moldu...",
+        "imgBad":"../Images/harry-potter/harry-perplexe.gif",
+        "resultAvg":"Presque ! Tu connais ton sujet mais tu peux mieux faire. Continue de travailler tes cours à Poudlard...",
+        "imgAvg":"",
+        "resultGood":"Tu maitrises parfaitement ton sujet ! Tu m'a tout l'air d'être un grand sorcier.",
+        "imgGood":""
     }
 ]
