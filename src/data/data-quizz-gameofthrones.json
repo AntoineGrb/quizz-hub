@@ -1,0 +1,290 @@
+[
+   {
+        "id" : "q1",
+        "title" : "Quel est l'emblème de la maison Baratheon ?",
+        "img" : "./Images/game-of-thrones/robert.jpg",
+        "choices" : [
+            {
+                "id":"q1r1",
+                "label":"Le lion",
+                "type":"false"
+            },
+            {
+                "id":"q1r2",
+                "label":"Le cerf",
+                "type":"true"
+            },
+            {
+                "id":"q1r3",
+                "label":"La belette",
+                "type":"false"
+            },
+            {
+                "id":"q1r4",
+                "label":"La rose",
+                "type":"false"
+            }
+        ],
+        "answer":"C'est bien le cerf qui orne les emblèmes de la maison Baratheon"
+    },
+    {
+        "id" : "q2",
+        "title" : "Au début de la série, combien compte t-on d'enfants nés Stark ?",
+        "img" : "./Images/game-of-thrones/ned.jpg",
+        "choices" : [
+            {
+                "id":"q2r1",
+                "label":"4",
+                "type":"false"
+            },
+            {
+                "id":"q2r2",
+                "label":"5",
+                "type":"true"
+            },
+            {
+                "id":"q2r3",
+                "label":"6",
+                "type":"false"
+            },
+            {
+                "id":"q2r4",
+                "label":"7",
+                "type":"false"
+            }
+        ],
+        "answer":"Il y a 5 enfants Stark : Robb, Sansa, Arya, Bran et Rickon. Jon, en tant que bâtard, n'est pas né Stark mais Snow"
+    },
+    {
+        "id" : "q3",
+        "title" : "Quelle phrase prononce Tyrion au moment où il tue son père avec une arbalète ?",
+        "img" : "./Images/game-of-thrones/tyrion.jpg",
+        "choices" : [
+            {
+                "id":"q3r1",
+                "label":"Je suis ton fils. J'ai toujours été ton fils.",
+                "type":"true"
+            },
+            {
+                "id":"q3r2",
+                "label":"Tu n'as jamais su ce que c'était d'être un vrai père.",
+                "type":"false"
+            },
+            {
+                "id":"q3r3",
+                "label":"Pour chaque mépris, pour chaque humiliation... voici ma réponse.",
+                "type":"false"
+            },
+            {
+                "id":"q3r4",
+                "label":"Tu m'as toujours vu comme un monstre. Permets-moi de jouer ce rôle une dernière fois.",
+                "type":"false"
+            }
+        ],
+        "answer":"Tyrion prononce bien la phrase 'Je suis ton fils. J'ai toujours été ton fils.'"
+    },
+    {
+        "id" : "q4",
+        "title" : "Quel bâtiment est détruit par Cersei dans le final de la saison 6 pour se débarasser de ses ennemis ?",
+        "img" : "./Images/game-of-thrones/cersei.jpg",
+        "choices" : [
+            {
+                "id":"q4r1",
+                "label":"Le Donjon Rouge",
+                "type":"false"
+            },
+            {
+                "id":"q4r2",
+                "label":"La Tour de la main",
+                "type":"false"
+            },
+            {
+                "id":"q4r3",
+                "label":"Le palais royal",
+                "type":"false"
+            },
+            {
+                "id":"q4r4",
+                "label":"Le Grand Septuaire de Baelor",
+                "type":"true"
+            }
+        ],
+        "answer":"Cersei utilise le feu grégeois pour faire exploser le Grand Septuaire pendant son propre procès"
+    },
+    {
+        "id" : "q5",
+        "title" : "Comment appelle t-on un bâtard né à Dorne ?",
+        "img" : "./Images/game-of-thrones/jon-snow.jpeg",
+        "choices" : [
+            {
+                "id":"q5r1",
+                "label":"Fitz",
+                "type":"false"
+            },
+            {
+                "id":"q5r2",
+                "label":"Pike",
+                "type":"false"
+            },
+            {
+                "id":"q5r3",
+                "label":"Snow",
+                "type":"false"
+            },
+            {
+                "id":"q5r4",
+                "label":"Sand ",
+                "type":"true"
+            }
+        ],
+        "answer":"Le nom varie selon les régions, par exemple Snow pour le nord ou Sand pour Dorne."
+    },
+    {
+        "id" : "q6",
+        "title" : "Avec qui Arya apprend-elle à se battre à l'épée ?",
+        "img" : "./Images/game-of-thrones/arya.jpg",
+        "choices" : [
+            {
+                "id":"q6r1",
+                "label":"Sylvio Forel",
+                "type":"true"
+            },
+            {
+                "id":"q6r2",
+                "label":"Le Limier",
+                "type":"false"
+            },
+            {
+                "id":"q6r3",
+                "label":"Jaqen H'Ghar",
+                "type":"false"
+            },
+            {
+                "id":"q6r4",
+                "label":"Jon Snow",
+                "type":"false"
+            }
+        ],
+        "answer":"C'est le maitre d'arme Sylvio Forel qui lui enseigne la danse de l'épée, avant de mourir en lui permettant de s'enfuir"
+    },
+    {
+        "id" : "q7",
+        "title" : "Dans quel ordre sont morts ces personnages emblématiques ?",
+        "img" : "./Images/game-of-thrones/mort.jpg",
+        "choices" : [
+            {
+                "id":"q7r1",
+                "label":"Joffrey Baratheon, Tywin Lannister, Ygritte, Ramsay Bolton ",
+                "type":"false"
+            },
+            {
+                "id":"q7r2",
+                "label":"Ygritte, Joffrey Baratheon, Ramsay Bolton, Tywin Lannister",
+                "type":"false"
+            },
+            {
+                "id":"q7r3",
+                "label":"Joffrey Baratheon, Ygritte, Tywin Lannister, Ramsay Bolton",
+                "type":"true"
+            },
+            {
+                "id":"q7r4",
+                "label":"Ygritte, Joffrey Baratheon, Ramsay Bolton, Tywin Lannister",
+                "type":"false"
+            }
+        ],
+        "answer":"L'ordre est Joffrey (empoisonné durant le 4*02), Ygritte (tuée dans le 4*09), Tywin (assassiné dans le 4*10) et Ramsay (tué dans le 6*09)."
+    },
+    {
+        "id" : "q8",
+        "title" : "Comment s'appellent les 3 dragons de Daenerys ?",
+        "img" : "./Images/game-of-thrones/dragon.jpg",
+        "choices" : [
+            {
+                "id":"q8r1",
+                "label":"Aegon, Balerion, Mexares",
+                "type":"false"
+            },
+            {
+                "id":"q8r2",
+                "label":"Vhagar, Caraxes, Dracarys ",
+                "type":"false"
+            },
+            {
+                "id":"q8r3",
+                "label":"Drogon, Rhaegal et Viseron",
+                "type":"true"
+            },
+            {
+                "id":"q8r4",
+                "label":"Aegon, Rhaenys, Visenya",
+                "type":"false"
+            }
+        ],
+        "answer":"Les 3 dragons de Daenerys s'appellent Drogon, Rhaegal et Viseron."
+    },
+    {
+        "id" : "q9",
+        "title" : "Quel est le métier de Benjen Stark, l'oncle de John Snow ? ",
+        "img" : "./Images/game-of-thrones/benjen.jpg",
+        "choices" : [
+            {
+                "id":"q9r1",
+                "label":"Commandant",
+                "type":"false"
+            },
+            {
+                "id":"q9r2",
+                "label":"Intendant",
+                "type":"false"
+            },
+            {
+                "id":"q9r3",
+                "label":"Patrouilleur",
+                "type":"true"
+            },
+            {
+                "id":"q9r4",
+                "label":"Ingénieur",
+                "type":"false"
+            }
+        ],
+        "answer":"Benjen Stark est patrouilleur pour la garde de la nuit."
+    },
+    {
+        "id" : "q10",
+        "title" : "Quel personnage est ramené à la vie grâce à la magie de Thoros de Myr ? ",
+        "img" : "./Images/game-of-thrones/thoros.jpg",
+        "choices" : [
+            {
+                "id":"q10r1",
+                "label":"Beric Dondarrion",
+                "type":"true"
+            },
+            {
+                "id":"q10r2",
+                "label":"Jorah Mormont",
+                "type":"false"
+            },
+            {
+                "id":"q10r3",
+                "label":"Jon Snow",
+                "type":"false"
+            },
+            {
+                "id":"q10r4",
+                "label":"Sandor Clegane",
+                "type":"false"
+            }
+        ],
+        "answer":"Beric Dondarrion est ramené plusieurs fois à la vie grâce aux prières de Thoros de Myr."
+    },
+    {
+        "resultBad":"Tu ne connais pas du tout ton sujet ! Tu ne tiendrais pas une journée à Westeros...",
+        "imgBad":"./Images/game-of-thrones/quiz-rate.gif",
+        "resultAvg":"Presque ! Tu connais ton sujet mais tu peux mieux faire. Reste sur tes gardes lorsque tu te balade à Port-Real...",
+        "imgAvg":"./Images/game-of-thrones/quiz-passable.gif",
+        "resultGood":"Tu maitrises parfaitement ton sujet ! Tu dois avoir du sang noble de Lannister ou de Targaryen...",
+        "imgGood":"./Images/game-of-thrones/quiz-reussi.gif"
+    }
+]
