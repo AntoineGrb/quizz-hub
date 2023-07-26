@@ -141,6 +141,7 @@ input:checked ~ .checkmark.checkmark-true:after {
 
 input:checked ~ .checkmark.checkmark-false:after {
   content: "";
+  font-weight: 900;
   display: block;
   color: white;
   left: 4px;
@@ -155,6 +156,10 @@ input:checked ~ .checkmark.checkmark-false:after {
 
 .label-false.checked {
   color: rgb(190, 39, 47);
+}
+
+.fa-xmark {
+  color: white;
 }
 
 .quizz {

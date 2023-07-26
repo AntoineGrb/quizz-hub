@@ -120,6 +120,7 @@
   // Styliser la checkmark "mauvaise réponse"
     input:checked ~ .checkmark.checkmark-false:after {
       content: "";
+      font-weight: 900;
       display: block;
       color: white;
       left: 4px;
@@ -137,4 +138,8 @@
 
     .label-false.checked {
       color:rgb(190, 39, 47);
+    }
+
+    .fa-xmark {
+      color:white;
     }

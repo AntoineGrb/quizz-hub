@@ -101,7 +101,13 @@ function responseToQuiz(data) {
                 input.setAttribute("disabled" , "disabled")
             })
 
-            //Résultats finaux
+            //Scroll auto
+            window.scrollBy({
+                top:250,
+                behavior:"smooth"
+            });
+
+            //Tester la fin du quiz et affichage des résultats finaux
             console.log("count : " , count , "score : " , score)
             if (count === (data.length - 1)) {
 
