@@ -1,8 +1,9 @@
 //SCRIPT AFFICHER LE QUIZZ
     //Récupérer le nom de la page actuelle
     const fullPathName = window.location.pathname;
-    const pathName = fullPathName.split("/")[1].split(".")[0] //Deux actions de split en une seule ligne
-    console.log(pathName)
+    const parts = fullPathName.split("/");
+    const pathName = parts[parts.length - 1].split(".")[0] //Deux actions de split en une seule ligne
+    console.log("url :", pathName)
     
     //Récupérer le fichier de données
     async function fetchData() {
