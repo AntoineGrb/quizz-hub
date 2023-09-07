@@ -140,12 +140,13 @@ input:checked ~ .checkmark.checkmark-true:after {
 }
 
 input:checked ~ .checkmark.checkmark-false:after {
-  content: "";
-  font-weight: 900;
+  content: "⨯";
+  font-weight: 100;
+  font-size: 1.45rem;
+  top: -4px;
+  left: 1px;
   display: block;
   color: white;
-  left: 4px;
-  top: 3px;
   transform: none;
   border: none;
 }
