@@ -2,7 +2,7 @@
 
 Bienvenue sur ma plateforme de quizz ! Ce petit site web recense des quizz de ma composition !
 
-J'ai uploadé ce site sur Vercel, voici le [lien](https://vercel.com/antoinegrb/quizz-op) ! 
+J'ai uploadé ce site sur Vercel, voici le [lien](https://quizz-op.vercel.app/) ! 
 
 ## Présentation 🌟
 
