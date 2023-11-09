@@ -1,11 +1,16 @@
 //INITIER LE QUIZ
-if (process.env.NODE_ENV !== 'test') { // Le code ici sera exécuté uniquement si l'environnement n'est pas en mode test
-    initQuiz();
-}
+// if (process.env.NODE_ENV !== 'test') { // Le code ici sera exécuté uniquement si l'environnement n'est pas en mode test
+    // initQuiz();
+// }
+
+initQuiz();
 
 async function initQuiz() {
+    //Récupérer le pathName de la page
     const pathName = getPathName();
+    //Fetcher les data du quiz correspondant
     const data = await fetchData(pathName);
+    //Déployer les datas du quiz
     deployData(data)
 }
 
@@ -26,7 +31,6 @@ async function fetchData(pathName) {
         }
 
         const data = await response.json();
-        console.log(data);
         return data;
 
     } catch (error) {
@@ -36,8 +40,9 @@ async function fetchData(pathName) {
 
 function deployData(data) {
     const main = document.querySelector("main")
+
     for (let i=0 ; i < data.length - 1 ; i++ ) {
-        //Construire les choix avec une boucle interne map
+        //Construire les choix de réponse avec une boucle interne map
         const choicesHTML = data[i].choices.map(choice => 
             `<div class="question__choice">
                 <input type="checkbox" id="${choice.id}" /> 
@@ -58,6 +63,7 @@ function deployData(data) {
             </div>`
         )
     }
+    //Ajouter les écouteurs d'évenement pour gérer les réponses utilisateur
     ListeningQuizResponses(data);
 }
     
@@ -81,7 +87,6 @@ function ListeningQuizResponses(data) {
 
             //On compte les scores
             count = countScores(responseInfos, count);
-            console.log(count)
 
             //On met à jour le DOM en conséquence
             updateDOMAfterResponse(responseInfos);
@@ -186,10 +191,10 @@ function testingIsQuizCompleted(data, count) {
     }
 }
 
-function add(a,b) {
-    return a+b
-}
+// function add(a,b) {
+//     return a+b
+// }
 
-module.exports = {
-    add
-}
+// module.exports = {
+//     add
+// }
