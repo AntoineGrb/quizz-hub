@@ -1,6 +1,7 @@
-
 //INITIER LE QUIZ
-initQuiz();
+if (process.env.NODE_ENV !== 'test') { // Le code ici sera exécuté uniquement si l'environnement n'est pas en mode test
+    initQuiz();
+}
 
 async function initQuiz() {
     const pathName = getPathName();
@@ -183,4 +184,12 @@ function testingIsQuizCompleted(data, count) {
         const results = document.querySelector('.results')
         results.style.display = "block"
     }
+}
+
+function add(a,b) {
+    return a+b
+}
+
+module.exports = {
+    add
 }
