@@ -1,25 +1,29 @@
-//INITIER LE QUIZ
-// if (process.env.NODE_ENV !== 'test') { // Le code ici sera exécuté uniquement si l'environnement n'est pas en mode test
-    // initQuiz();
-// }
-
+// INITIER LE QUIZ
 initQuiz();
+
+//Pour les tests :
+// if (process.env.NODE_ENV !== 'test') { // Le code ici sera exécuté uniquement si l'environnement n'est pas en mode test
+//     initQuiz();
+// }
 
 async function initQuiz() {
     //Récupérer le pathName de la page
-    const pathName = getPathName();
+    const pathName = window.location.pathname;
+    console.log(pathName);
+    const fileName = getPathName(pathName);
+    console.log(fileName);
     //Fetcher les data du quiz correspondant
-    const data = await fetchData(pathName);
+    const data = await fetchData(fileName);
     //Déployer les datas du quiz
-    deployData(data)
+    deployData(data);
 }
 
-function getPathName() {
+function getPathName(pathName) {
     //Récupérer le nom de la page actuelle
-    const fullPathName = window.location.pathname;
-    const parts = fullPathName.split("/");
-    const pathName = parts[parts.length - 1].split(".")[0] //Deux actions de split en une seule ligne
-    return pathName;
+    console.log(pathName);
+    const parts = pathName.split("/");
+    const fileName = parts[parts.length - 1].split(".")[0]; //Deux actions de split en une seule ligne
+    return fileName;
 }
 
 async function fetchData(pathName) {
@@ -35,11 +39,12 @@ async function fetchData(pathName) {
 
     } catch (error) {
         console.error("Erreur lors de la récupération du JSON:", error);
+        throw error;
     }
 }
 
 function deployData(data) {
-    const main = document.querySelector("main")
+    const main = document.querySelector("main");
 
     for (let i=0 ; i < data.length - 1 ; i++ ) {
         //Construire les choix de réponse avec une boucle interne map
@@ -49,7 +54,7 @@ function deployData(data) {
                 <div class="checkmark checkmark-${choice.type}"></div>
                 <label for="${choice.id}" class="label-${choice.type}"> ${choice.label}  </label>
             </div>`
-        ).join('') //Convertir le tableau résultant en une chaine unique
+        ).join(''); //Convertir le tableau résultant en une chaine unique
 
         main.insertAdjacentHTML("beforeend" , 
             `<div class="question ${data[i].id}">
@@ -61,7 +66,7 @@ function deployData(data) {
                 <p> <span> </span> </p> <br/>
                 <p> ${data[i].answer} </p>
             </div>`
-        )
+        );
     }
     //Ajouter les écouteurs d'évenement pour gérer les réponses utilisateur
     ListeningQuizResponses(data);
@@ -71,11 +76,11 @@ function deployData(data) {
 let count = {
     answers:0,
     goodAnswers:0
-}
+};
 
 function ListeningQuizResponses(data) {
 
-    let inputs = document.querySelectorAll("input")
+    let inputs = document.querySelectorAll("input");
     inputs.forEach(input => {
         input.addEventListener("click" , (e) => {
             
@@ -92,15 +97,15 @@ function ListeningQuizResponses(data) {
             updateDOMAfterResponse(responseInfos);
 
             //Tester la fin du quiz et affichage des résultats finaux
-            testingIsQuizCompleted(data, count)
-        })
-    })
+            testingIsQuizCompleted(data, count);
+        });
+    });
 }
 
 function getResponseInfos(id) {
     //On en déduit l'id de la question et du choix correspondant  
-    const questionId = id.slice(0, id.length-2) //ex q1
-    const answerId = `a${id.slice(1, id.length-2)}` //ex r1
+    const questionId = id.slice(0, id.length-2); //ex q1
+    const answerId = `a${id.slice(1, id.length-2)}`; //ex r1
 
     //On en déduit la valeur de la classe de l'élément label
     const labelElement = document.querySelector(`label[for='${id}']`);
@@ -111,37 +116,37 @@ function getResponseInfos(id) {
         answerId,
         labelElement,
         labelElementClassValue
-    }
+    };
 
-    return responseInfos
+    return responseInfos;
 }
 
 function updateDOMAfterResponse(responseInfos) {
     //Comportement du DOM après réponse
-    responseInfos.labelElement.classList.toggle("checked")
-    const answer = document.querySelector(`.${responseInfos.answerId}`)
-    answer.style.display = "block"
+    responseInfos.labelElement.classList.toggle("checked");
+    const answer = document.querySelector(`.${responseInfos.answerId}`);
+    answer.style.display = "block";
     
     //Pour les bonnes réponses
     if (responseInfos.labelElementClassValue === "label-true") {
-        answer.style.borderColor = "green"
-        document.querySelector(`.${responseInfos.answerId} p`).innerText = "👏 Correct !"
-        document.querySelector(`.${responseInfos.answerId} p`).style.color = "seagreen"
+        answer.style.borderColor = "green";
+        document.querySelector(`.${responseInfos.answerId} p`).innerText = "👏 Correct !";
+        document.querySelector(`.${responseInfos.answerId} p`).style.color = "seagreen";
     }
 
     //Pour les mauvaises réponses
     else if (responseInfos.labelElementClassValue === "label-false") {
-        answer.style.borderColor = "red"
-        document.querySelector(`.${responseInfos.answerId} p`).innerText = "👎 Faux !"
-        document.querySelector(`.${responseInfos.answerId} p`).style.color = "rgb(190, 39, 47)"
+        answer.style.borderColor = "red";
+        document.querySelector(`.${responseInfos.answerId} p`).innerText = "👎 Faux !";
+        document.querySelector(`.${responseInfos.answerId} p`).style.color = "rgb(190, 39, 47)";
     }
-    else return
+    else return;
 
     //Désactiver les checkboxes après la réponse
     const questionInputs = document.querySelectorAll(`.${responseInfos.questionId} input`);
     questionInputs.forEach(input => {
-        input.setAttribute("disabled" , "disabled")
-    })
+        input.setAttribute("disabled" , "disabled");
+    });
 
     //Scroll auto
     window.scrollBy({
@@ -152,49 +157,50 @@ function updateDOMAfterResponse(responseInfos) {
 
 function countScores(responseInfos, count) {
     if (responseInfos.labelElementClassValue === "label-true") {
-        count.answers++
-        count.goodAnswers++
+        count.answers++;
+        count.goodAnswers++;
     }
 
     else if (responseInfos.labelElementClassValue === "label-false") {
-        count.answers++
+        count.answers++;
     }
 
-   return count;
+    return count;
 }
 
 function testingIsQuizCompleted(data, count) {
     if (count.answers === (data.length - 1)) {
 
-        document.querySelector('.results__score').innerText = `${count.goodAnswers} / ${count.answers}`
+        document.querySelector('.results__score').innerText = `${count.goodAnswers} / ${count.answers}`;
         if (count.goodAnswers <= 0.5*count.answers) {
-            document.querySelector('.results__text1').innerText = "Oh non..."
-            document.querySelector('.results__text2').innerText = `${data[data.length - 1].resultBad}`
-            document.querySelector(".results > img").setAttribute("src" , `${data[data.length - 1].imgBad}`)
+            document.querySelector('.results__text1').innerText = "Oh non...";
+            document.querySelector('.results__text2').innerText = `${data[data.length - 1].resultBad}`;
+            document.querySelector(".results > img").setAttribute("src" , `${data[data.length - 1].imgBad}`);
         }
 
         else if (count.goodAnswers <= 0.8*count.answers) {
-            document.querySelector('.results__text1').innerText = "Pas mal !"
-            document.querySelector('.results__text2').innerText = `${data[data.length - 1].resultAvg}`
-            document.querySelector(".results > img").setAttribute("src" , `${data[data.length - 1].imgAvg}`)
+            document.querySelector('.results__text1').innerText = "Pas mal !";
+            document.querySelector('.results__text2').innerText = `${data[data.length - 1].resultAvg}`;
+            document.querySelector(".results > img").setAttribute("src" , `${data[data.length - 1].imgAvg}`);
         }
 
         else {
-            document.querySelector('.results__text1').innerText = "Bravo !"
-            document.querySelector('.results__text2').innerText = `${data[data.length - 1].resultGood}`
-            document.querySelector(".results > img").setAttribute("src" , `${data[data.length - 1].imgGood}`)
+            document.querySelector('.results__text1').innerText = "Bravo !";
+            document.querySelector('.results__text2').innerText = `${data[data.length - 1].resultGood}`;
+            document.querySelector(".results > img").setAttribute("src" , `${data[data.length - 1].imgGood}`);
         }
 
         //Affichage du bloc
-        const results = document.querySelector('.results')
-        results.style.display = "block"
+        const results = document.querySelector('.results');
+        results.style.display = "block";
     }
 }
 
-// function add(a,b) {
-//     return a+b
-// }
-
-// module.exports = {
-//     add
-// }
+module.exports = {
+    initQuiz,
+    getPathName,
+    fetchData,
+    deployData,
+    getResponseInfos,
+    countScores
+};
