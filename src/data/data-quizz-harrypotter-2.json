@@ -279,7 +279,8 @@
         ],
         "answer":"Lily Luna Potter est le nom de la cadette d'Harry Potter. James Severus Potter est le deuxième enfant d'Harry."
     },
-    {
+    {   "title":"Harry Potter : auras-tu 10/10 à ce quiz difficile sur Harry Potter ?",
+        "subtitle":"Teste tes connaissances sur l'univers Harry Potter avec ces 10 questions de niveau difficile. Prouve à tout le monde que tu as l'etoffe d'un Auror !",
         "resultBad":"Tu ne connais pas du tout ton sujet ! Tu dois être un moldu...",
         "imgBad":"./Images/harry-potter/harry-perplexe.gif",
         "resultAvg":"Presque ! Tu connais ton sujet mais tu peux mieux faire. Continue de travailler tes cours à Poudlard...",

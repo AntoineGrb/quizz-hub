@@ -259,7 +259,9 @@
         ],
         "answer":"La réponse est 3D2Y. Le message indique aux membres de l'équipage de ne pas se réunir en 3 jours comme initialement prévu, mais plutôt en 2 ans."
     },
-    {
+    {   
+        "title":"One Piece : auras-tu 10/10 à ce quiz sur One Piece ?",
+        "subtitle":"Tu es fan de One Piece ? Ce quiz va te permettre de le prouver… ou pas. Réponds à ces 8 questions qui portent sur la première partie de l'aventure de l'équipage du Chapeau de paille, avant leur entrée dans le Nouveau Monde !",
         "resultBad":"Tu ne connais pas du tout ton sujet ! C’est dommage… On ne peut pas dire que tu sois fan de One Piece.",
         "imgBad":"../Images/one-piece/baggy-enervé.gif",
         "resultAvg":"Tu maitrises bien ton sujet, on voit bien que apprécie One Piece mais il te reste du chemin avant de devenir un vrai mugiwara",

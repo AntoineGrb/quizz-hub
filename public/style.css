@@ -22,9 +22,14 @@ h1 {
   font-size: 1.7rem;
 }
 
+h2 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
 h3 {
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.45px;
 }
 
@@ -170,20 +175,20 @@ input:checked ~ .checkmark.checkmark-false:after {
   margin-bottom: 20px;
 }
 .quizz__img {
-  width: 60%;
+  width: 50%;
 }
 .quizz__img img {
   width: 100%;
 }
 .quizz__desc {
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 .quizz__desc__title > p {
   font-size: 1rem;
-  line-height: 1.6rem;
+  line-height: 1.3rem;
 }
 .quizz__desc__date > p {
   font-size: 0.8rem;
