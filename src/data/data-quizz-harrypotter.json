@@ -279,7 +279,8 @@
         ],
         "answer":"Harry aborde Parvati pour aller au bal des 3 sorciers, et demande également pour Ron qui ira avec sa soeur jumelle Padma."
     },
-    {
+    {   "title":"Harry Potter : auras-tu 10/10 à ce quiz sur Harry Potter ?",
+        "subtitle":"Teste tes connaissances sur l'univers Harry Potter avec ces 10 questions de niveau facile à intermédiaire, et prouve à tout le monde que tu as l'etoffe d'un vrai sorcier !",
         "resultBad":"Tu ne connais pas du tout ton sujet ! Tu dois être un moldu...",
         "imgBad":"./Images/harry-potter/harry-perplexe.gif",
         "resultAvg":"Presque ! Tu connais ton sujet mais tu peux mieux faire. Continue de travailler tes cours à Poudlard...",

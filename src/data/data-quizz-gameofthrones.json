@@ -279,7 +279,8 @@
         ],
         "answer":"Beric Dondarrion est ramené plusieurs fois à la vie grâce aux prières de Thoros de Myr."
     },
-    {
+    {   "title":"Game of Thrones : auras-tu 10/10 à ce quiz sur l'univers de Game of Thrones ?",
+        "subtitle":"Teste tes connaissances sur Westeros avec ces 10 questions et essayes de survivre à cet univers impitoyable !",
         "resultBad":"Tu ne connais pas du tout ton sujet ! Tu ne tiendrais pas une journée à Westeros...",
         "imgBad":"./Images/game-of-thrones/quiz-rate.gif",
         "resultAvg":"Presque ! Tu connais ton sujet mais tu peux mieux faire. Reste sur tes gardes lorsque tu te balade à Port-Real...",
