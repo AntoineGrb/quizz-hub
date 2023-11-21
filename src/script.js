@@ -8,27 +8,28 @@ initQuiz();
 
 async function initQuiz() {
     //Récupérer le pathName de la page
-    const pathName = window.location.pathname;
-    console.log(pathName);
-    const fileName = getPathName(pathName);
-    console.log(fileName);
+    const quizName = getQuizzName();
+    console.log(quizName);
+
     //Fetcher les data du quiz correspondant
-    const data = await fetchData(fileName);
+    const data = await fetchData(quizName);
+
     //Déployer les datas du quiz
     deployData(data);
 }
 
-function getPathName(pathName) {
-    //Récupérer le nom de la page actuelle
-    console.log(pathName);
-    const parts = pathName.split("/");
-    const fileName = parts[parts.length - 1].split(".")[0]; //Deux actions de split en une seule ligne
-    return fileName;
+function getQuizzName() {
+    //Récupérer le paramètre dans l'URL
+    const query = window.location.search;
+    const urlParam = new URLSearchParams(query);
+    const quizName = urlParam.get('quiz');
+    return quizName;
+
 }
 
-async function fetchData(pathName) {
+async function fetchData(quizName) {
     try {
-        const response = await fetch(`../src/data/data-${pathName}.json`);
+        const response = await fetch(`../src/data/data-${quizName}.json`);
         
         if (!response.ok) {
             throw new Error("Erreur réseau ou fichier non trouvé");
@@ -44,6 +45,14 @@ async function fetchData(pathName) {
 }
 
 function deployData(data) {
+    //Les titres
+    const titleElement = document.querySelector("h1");
+    const subtitleElement = document.querySelector("h2");
+
+    titleElement.innerText = data[data.length - 1].title;
+    subtitleElement.innerText = data[data.length - 1].subtitle;
+
+    //Les questions
     const main = document.querySelector("main");
 
     for (let i=0 ; i < data.length - 1 ; i++ ) {
@@ -198,7 +207,7 @@ function testingIsQuizCompleted(data, count) {
 
 module.exports = {
     initQuiz,
-    getPathName,
+    getQuizzName,
     fetchData,
     deployData,
     getResponseInfos,
